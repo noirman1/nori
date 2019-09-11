@@ -1,9 +1,9 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 
-html = urlopen("https://www.naver.com/").read()
+html = urlopen("https://www.daum.net/").read()
 soup = BeautifulSoup(html, "html.parser")
-myUrls = soup.select('span.ah_k')
+myUrls = soup.select('span.txt_issue')
 cnt = 0
 for j in myUrls:
     cnt +=1
